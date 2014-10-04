@@ -1,0 +1,212 @@
+/* line 1, ../sass/base/_typography.scss */
+body {
+  font: 16px/1.5 "proxima nova soft", "proxima-nova-soft", "helvetica neue", helvetica, arial, sans-serif;
+}
+@media screen and (max-width: 700px) {
+  /* line 1, ../sass/base/_typography.scss */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* line 6, ../sass/base/_typography.scss */
+h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 13, ../sass/base/_typography.scss */
+h2 {
+  font-size: 34px;
+  padding: 0.69em 0 0.413em;
+}
+@media screen and (max-width: 900px) {
+  /* line 13, ../sass/base/_typography.scss */
+  h2 {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 13, ../sass/base/_typography.scss */
+  h2 {
+    font-weight: 300;
+  }
+}
+
+/* line 20, ../sass/base/_typography.scss */
+h3 {
+  font-size: 24px;
+  padding: 0.35em 0.0em 0.15em;
+}
+@media screen and (max-width: 900px) {
+  /* line 20, ../sass/base/_typography.scss */
+  h3 {
+    font-size: 16px;
+  }
+}
+
+/* line 26, ../sass/base/_typography.scss */
+p, li {
+  font-size: 18px;
+  padding-top: 1.5em;
+}
+
+/* line 31, ../sass/base/_typography.scss */
+strong, .strong {
+  font-weight: bold;
+}
+
+/* line 35, ../sass/base/_typography.scss */
+a {
+  color: #a00;
+  text-decoration: none;
+}
+
+/* line 36, ../sass/base/_typography.scss */
+a:hover, a:focus {
+  color: #950000;
+  border-bottom: dotted 1px;
+}
+
+/* line 1, ../sass/modules/_body.scss */
+body {
+  background: #fef0c4;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/modules/_banner.scss */
+header {
+  display: block;
+  margin: 0 0 24px;
+  padding: 1px 20px;
+  text-align: center;
+  position: relative;
+  background: transparent url("../images/water.svg") no-repeat top center;
+  background-size: 100% auto;
+}
+@media screen and (max-width: 1600px) {
+  /* line 1, ../sass/modules/_banner.scss */
+  header {
+    background-size: 100% auto;
+    margin-bottom: 12px;
+  }
+}
+/* line 12, ../sass/modules/_banner.scss */
+header a.github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+}
+@media screen and (max-width: 800px) {
+  /* line 12, ../sass/modules/_banner.scss */
+  header a.github {
+    display: none;
+  }
+}
+/* line 18, ../sass/modules/_banner.scss */
+header h1 {
+  display: block;
+  font-weight: bold;
+  padding: 5% 0 0 0;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  /* line 18, ../sass/modules/_banner.scss */
+  header h1 {
+    padding: 8% 0% 5% 0%;
+  }
+}
+/* line 27, ../sass/modules/_banner.scss */
+header h1 a {
+  color: #a00;
+  display: block;
+  font-size: 90px;
+  line-height: 0.9em;
+  padding-top: 150px;
+  border: none;
+  font-family: "bello-pro", georgia, serif;
+  background: transparent url("../images/logo.svg") no-repeat top center;
+  background-size: 140px auto;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 900px) {
+  /* line 27, ../sass/modules/_banner.scss */
+  header h1 a {
+    font-size: 76px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 27, ../sass/modules/_banner.scss */
+  header h1 a {
+    font-size: 68px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 27, ../sass/modules/_banner.scss */
+  header h1 a {
+    font-size: 54px;
+    font-weight: normal;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 27, ../sass/modules/_banner.scss */
+  header h1 a {
+    font-size: 47px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 27, ../sass/modules/_banner.scss */
+  header h1 a {
+    font-size: 34px;
+  }
+}
+/* line 47, ../sass/modules/_banner.scss */
+header h1 a span {
+  display: block;
+}
+/* line 49, ../sass/modules/_banner.scss */
+header h1 a em {
+  display: block;
+  font-size: 24px;
+  line-height: 16px;
+  font-family: "proxima nova soft", "proxima-nova-soft", "helvetica neue", helvetica, arial, sans-serif;
+  font-style: normal;
+}
+/* line 57, ../sass/modules/_banner.scss */
+header h1 a:hover {
+  color: #a00;
+  border: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 65, ../sass/modules/_banner.scss */
+header h3 a {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+}
+/* line 66, ../sass/modules/_banner.scss */
+header h3 a:hover {
+  color: #a00;
+}
+
+/* line 1, ../sass/pages/_home.scss */
+.home {
+  text-align: center;
+}
+/* line 4, ../sass/pages/_home.scss */
+.home button.tsbutton {
+  display: inline-block;
+  margin-top: 20px;
+  background: #a00;
+  color: #fef0c4;
+  font-family: "proxima nova soft", "proxima-nova-soft", "helvetica neue", helvetica, arial, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
