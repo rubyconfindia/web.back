@@ -1,0 +1,8 @@
+*.sass-cache
+*_site
+*Gemfile
+*Gemfile.lock
+_site
+.rvmrc
+.ruby-gemset
+.ruby-version
