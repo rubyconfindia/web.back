@@ -1,0 +1,72 @@
+.home{
+  h3{text-align: center;}
+
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .page {
+    top: 0px
+  }
+}
+
+ul.speakers, ul.contact, ul.sponsors, ul.organizers{
+  margin: 0; padding: 0;
+  text-align: center;
+
+  li{
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    padding: 0; margin: 10px;
+    line-height: 1em;
+
+    img{
+      display: inline-block;
+      width: 120px; height: 120px;
+      @include border-radius(60px);
+      border: solid 4px $white;
+    }
+
+    &:before{display: none;}
+  }
+
+  h4{font-size: 16px; font-weight: 700;}
+  a{font-size: 16px;}
+  .phone{color: $gray;}
+}
+
+ul.sponsors, ul.organizers{
+  li{
+    display: inline-block;
+    width: 150px;
+    margin: 5px 10px;
+
+    img{
+      background: $white;
+      margin: 0;
+      width: auto;
+      height: auto;
+      @include border-radius(0);
+      @include box-shadow(0 0 0 4px $white, 0 0 4px 4px rgba($black, 0.1));
+    }
+
+    a:hover{
+      border: none;
+      img{
+        @include box-shadow(0 0 0 4px $white, 0 0 4px 4px rgba($black, 0.4));
+      }
+    }
+  }
+}
+
+ul.sponsors {
+  &.gold li{width: 350px;}
+  &.silver li{width: 200px;}
+  &.other li{width: 180px;}
+  &.scholarship li { width: auto;}
+}
+
+h3.section { margin-top: 50px; }
