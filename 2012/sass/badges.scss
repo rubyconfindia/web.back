@@ -1,0 +1,41 @@
+section#badges{
+  @include full;
+  margin: 0; 
+  padding: 0;
+  color: $white;
+  
+  ul{
+     display: inline; margin: 0; padding: 0;
+
+    li{
+      @include full;
+      @include clearfix;
+      list: none;
+      display: block;
+      
+      span{
+        @include transition-duration(2s);
+        @include columns(4,12);
+        text-align: center;
+
+        img{max-width: 95%; margin: 0 auto;}
+      }
+      
+      pre{
+        @include columns(8,12);
+        @include omega(12);
+        margin-top: 76px;
+        line-height: 15px;
+        display: block;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section#badges ul li span, section#badges ul li pre{
+    @include columns(12,12);
+    margin-top: 0;
+  }
+}

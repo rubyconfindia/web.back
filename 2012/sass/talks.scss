@@ -1,0 +1,112 @@
+section#talks{
+  @include full;
+
+  article{
+    @include columns(12,12);
+    
+    display: block;
+    position: relative;
+    color: $dark-gray;
+    clear: both;
+    padding-top: 30px;
+
+    h3, p, ul{padding: 4px 10px;}
+    a{color: $primary-color;}
+    
+    div.speaker{
+      display: block;
+      color: $white;
+      font-size: 13px;
+      line-height: 16px;
+      
+      p{background: transparent;}
+
+      div.photo{
+        display: block;
+        float: left;
+        position: relative;
+        background: rgba($black, 0.4);
+        padding: 4px;
+        width: 128px;
+        height: 148px;
+        margin: -20px 10px 0 0;
+      
+        @include border-radius(0 4px 4px 0);
+        @include box-shadow(0 0 8px rgba(0,0,0,0.3));
+      
+        img{width: 128px; height: 128px;}
+        
+        h3{
+          font-size: 12px;
+          line-height: 12px;
+          font-weight: normal;
+          color: $white;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          background: transparent;
+        }
+      
+        span.links{
+          display: block;
+          position: absolute;
+          height: 20px;
+          background: $white;
+        
+          top: 112px;
+          left: 4px;
+        
+          a{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: transparent url('mini-icons.png') -20px -20px  no-repeat;
+            float: left;
+            border: none;
+          
+            text-indent: -1000em;
+            overflow: hidden;
+          
+            &.website{ background-position: -20px -20px; }
+            &.website:hover{ background-position: -60px -20px; }
+            &.twitter{ background-position: -20px -60px; }
+            &.twitter:hover{ background-position: -60px -60px; }
+            &:hover{ background-color: $black; }
+          }
+        }
+      }
+    }
+    
+    div.talk{
+      background: $white;
+      min-height: 180px;
+
+      h3{
+        background: $highlight-color;
+        margin: 0;
+        padding: 20px 20px 10px 20px;
+      } 
+    }
+    
+  }
+}
+
+@media screen and (min-width: 800px) {
+ section#talks{
+   article{
+      div.speaker{
+        @include columns(5,12);
+        @include omega(12);
+
+        div.photo{margin: -4px 10px 0 10px;}
+      }
+      
+      div.talk{
+        @include columns(7,12);
+        @include alpha(12);
+        min-height: 240px;
+ 
+      }
+   }
+ } 
+}
