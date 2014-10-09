@@ -1,0 +1,58 @@
+html, body{
+  font-family: 'proxima-nova';
+  font-size: 14px;
+  color: #444;
+  background: $white;
+}
+
+#header{
+  font-family: 'brandon-grotesque';
+
+  h1, h2, h3{
+    margin: 0; padding: 0; line-height: 1.2em;
+  }
+
+  h1{font-size: 40px; font-weight: 900;}
+  h2{font-size: 20px; font-weight: 300;}
+  h3{font-size: 20px; font-weight: 900;}
+
+  @media screen and (min-width:500px){
+    h1{font-size: 50px;}
+    h2{font-size: 24px;}
+    h3{font-size: 24px;}
+  }
+
+  @media screen and (min-width:600px){
+    h1{font-size: 60px;}
+    h2{font-size: 24px;}
+    h3{font-size: 24px;}
+  }
+
+  @media screen and (min-width:800px){
+    h1{font-size: 70px;}
+    h2{font-size: 24px;}
+    h3{font-size: 26px;}
+  }
+
+  @media screen and (min-width:1000px){
+    h1{font-size: 92px;}
+    h2{font-size: 30px;}
+    h3{font-size: 30px;}
+  }
+}
+
+#sidebar{
+  h3{
+    color: $red;
+    margin-bottom: 0;
+    font-size: 16px;
+
+    &+p{margin-top: 0;}
+  }
+}
+
+a{
+  color: $primary-color;
+  text-decoration: none;
+  border-bottom: dotted 1px $primary-color;
+}

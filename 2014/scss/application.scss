@@ -1,0 +1,61 @@
+@import "compass/css3";
+@import "compass/css3/images";
+
+@import "base/var";
+@import "base/colors";
+@import "base/mixins";
+@import "base/normalize";
+@import "base/susy";
+@import "base/typography";
+
+@import "modules/syntax";
+@import "modules/sprites";
+@import "modules/header";
+@import "modules/gallery";
+@import "modules/button";
+@import "modules/nav";
+
+@import "pages/home";
+@import "pages/tickets";
+@import "pages/faq";
+@import "pages/badges";
+@import "pages/scholarship";
+
+@include border-box-sizing;
+
+html{ background: #FEF0C4 url('../images/texture.png')  repeat-y center center;}
+body { position: relative;}
+
+.page {
+	padding: 0 20px 200px 20px;
+	margin: 0 auto;
+  max-width: 960px;
+  position: relative;
+  top: -110px;
+
+  @media screen and (max-width: 720px){top: -50px;}
+
+	ul { padding: 0;}
+	li {
+		position: relative;
+		list-style: none;
+		padding-left: 24px;
+    padding: 0 0 0 24px;
+    margin: 5px 0 0 0;
+
+    &:before {
+			position: absolute;
+			left: 0;
+			top: 1px;
+			content: url("../images/sprites/waterdrop_2.png");
+			height: 24px;
+			width: 24px;
+		}
+
+		h3 { padding-top: 4px; font-weight: 500;}
+	}
+}
+
+#event {
+	margin-bottom: 3em !important;
+}

@@ -1,0 +1,29 @@
+$sprites: sprite-map("sprites/*.png", $layout: smart);
+$sprites-retina: sprite-map("sprites-2x/*.png", $layout: smart);
+
+@mixin sprite-background($sprite) {
+    background-image: sprite-url($sprites);
+    background-position: sprite-position($sprites, $sprite);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    height: image-height(sprite-file($sprites, $sprite));
+    width: image-width(sprite-file($sprites, $sprite));
+
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+        background-image: sprite-url($sprites-retina);
+        background-size: (image-width(sprite-path($sprites-retina)) / 2) (image-height(sprite-path($sprites-retina)) / 2);
+        background-position: round(nth(sprite-position($sprites-retina, $sprite), 1) / 2) round(nth(sprite-position($sprites-retina, $sprite), 2) / 2);
+        height: image-height(sprite-file($sprites-retina, $sprite)) / 2;
+        width: image-width(sprite-file($sprites-retina, $sprite)) / 2;
+    }
+}
+
+@mixin retina-background($normal, $retina) {
+    background-image: image-url($normal);
+
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2) {
+        background-image: image-url($retina);
+        background-size: (image-width($retina) / 2) (image-height($retina) / 2);
+    }
+}

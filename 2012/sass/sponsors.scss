@@ -1,0 +1,37 @@
+section#sponsors{
+  @include full;
+  h2{
+    margin: 0;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  div.sponsor{
+    display: block;
+    background: $white;
+    color: $dark-gray;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+
+    h3{
+      background: $highlight-color;
+      margin: 0;
+      padding: 20px 20px 10px 20px;
+    }
+    
+    div{padding: 4px 10px;}
+    
+    a{color: $primary-color;}
+  }
+}
+
+@media screen and (min-width: 800px) {
+  section#sponsors{
+    @include columns(8);
+    @include prefix(2);
+    @include suffix(2);
+  }
+}

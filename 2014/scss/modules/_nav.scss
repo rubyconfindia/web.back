@@ -1,0 +1,40 @@
+nav, .page nav{
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    li{
+      display: inline-block;
+      position: relative;
+      margin: 0 0 0 0;
+      padding: 0 8px 0 0;
+
+      &:before{display: none;}
+
+      a{
+        color: $gray-light;
+        display: block;
+        padding: 0 5px;
+        text-transform: lowercase;
+        @include text-shadow(1px 1px 1px rgba($white, 0.5));
+
+        &:hover{
+          border-bottom: none;
+        }
+      }
+
+      @media screen and (max-width: 700px) { font-size: 15px; }
+    }
+
+  }
+
+}
